@@ -1,0 +1,117 @@
+body {
+  background: #368fcf;
+  /* background-image: url(pic/709796.webp);
+  background-size: cover; */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiles {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tile {
+  height: 150px;
+  width: 150px;
+  /* background-image: url(pic/backtiles.jpg); */
+  background-size: cover;
+  border: 5px solid #6819a5;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.tile:hover {
+  /* box-shadow: 0px 0px 0px 0px rgb(171, 22, 182);
+   */
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.back-tile {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.d-none {
+  display: none;
+}
+
+.win-title {
+  text-align: center;
+  color: yellow;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 2px black;
+}
+
+.mainTitle {
+  font-size: 40px;
+  color: rgb(248, 126, 49);
+  text-shadow: 2px 2px 4px black;
+}
+#paired-found-counter {
+  font-size: 30px;
+}
+.timer {
+  text-align: center;
+  font-size: 30px;
+}
+
+.saveTime,
+.currentHigheScore {
+  text-align: center;
+  font-size: 30px;
+}
+
+.startGame {
+  text-align: center;
+  direction: rtl;
+  background-color: rgb(223, 91, 91);
+  width: 300px;
+  border: 10px solid rgb(57, 217, 57);
+  padding: 50px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.btn_startGame {
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: rgb(6, 6, 6);
+  color: white;
+  font-size: 15px;
+}
+.enterName {
+  color: #6819a5;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.levels {
+  font-size: 35px;
+}
+.harry,
+.dog {
+  width: 200px;
+  height: 200px;
+  margin-left: 15px;
+}

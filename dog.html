@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./dog.js"></script>
+    <title>Memory-Game</title>
+  </head>
+  <body>
+    <!-- <h1 class="mainTitle center-all">:בחר משחק זיכרון</h1> -->
+
+    <h2 class="center-all levels d-none">שלב-1</h2>
+    <h2 class="center-all d-none" id="paired-found-counter">
+      זוגות שנמצאו - 0
+    </h2>
+    <div class="center-all">
+      <div class="startGame">
+        <label class="enterName" for="name">הכנס שם:</label>
+        <input class="playerName" type="text" name="name" />
+        <button class="btn_startGame">לחץ להתחלת המשחק</button>
+      </div>
+    </div>
+    <div id="game-zone" class="tiles">
+      <!-- <div class="col tile center-all">
+        <img class="back-tile" src="./pic/backtiles.jpg" alt="" />
+        <img class="front-tile" src="./pic/pic${titles.id}.jpg" alt="" />
+      </div> -->
+    </div>
+    <div>
+      <audio id="sound">
+        <source
+          src="./Cartoon Weird Noise Short Mouth Popping 02.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <h1 class="win-title"></h1>
+
+      <h2 class="timer"></h2>
+      <h2 class="saveTime"></h2>
+      <div class="currentHigheScore"></div>
+    </div>
+  </body>
+</html>
