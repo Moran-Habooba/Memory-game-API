@@ -1,7 +1,5 @@
 body {
   background: #368fcf;
-  /* background-image: url(pic/709796.webp);
-  background-size: cover; */
   margin: 0;
   box-sizing: border-box;
 }
@@ -23,7 +21,6 @@ body {
 .tile {
   height: 150px;
   width: 150px;
-  /* background-image: url(pic/backtiles.jpg); */
   background-size: cover;
   border: 5px solid #6819a5;
   cursor: pointer;
@@ -34,8 +31,6 @@ body {
 }
 
 .tile:hover {
-  /* box-shadow: 0px 0px 0px 0px rgb(171, 22, 182);
-   */
   box-sizing: border-box;
 }
 
@@ -114,4 +109,52 @@ img {
   width: 200px;
   height: 200px;
   margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .tiles {
+    margin: 24px auto;
+  }
+
+  .tile {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+  }
+
+  .win-title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .tiles {
+    margin: 32px auto;
+  }
+
+  .tile {
+    height: 120px;
+    width: 120px;
+    margin: 8px;
+  }
+
+  .win-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tiles {
+    margin: 48px auto;
+  }
+
+  .tile {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+
+  .win-title {
+    font-size: 60px;
+  }
 }
